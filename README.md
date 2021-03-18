@@ -11,7 +11,7 @@ git clone https://github.com/WahabDev12/NewsApp.git
 ```
 ## Go to Project directory
 ```
-cd NewsApp
+cd NewsApp/flaskapp
 ```
 ## Install and activate virtual environment
 ```
