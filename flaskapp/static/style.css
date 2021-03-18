@@ -1,0 +1,178 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color:#fafafa;
+    color:#292b2c;    ;
+    overflow-x: none;
+}
+
+#icon{
+    font-size:27px;
+}
+
+.rotate{
+    width:60px;
+    height:60px;
+    background:url("worldwide.png");
+    background-size: cover;
+    animation:rotation 2s infinite linear;
+}
+
+
+
+.notifs{
+    text-transform: capitalize;
+    text-align:center;
+}
+
+.card-container{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+p{
+    font-size:29px;
+    color:white;
+}
+
+#view{
+    width:100px;
+    border-radius:3px;
+    padding:7px;
+    text-decoration: none;
+    outline:none;
+}
+.card-container > div{
+    height:220px;
+}
+
+#card-body{
+    outline:#292b2c;
+}
+
+@keyframes rotation{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#card{
+    margin-top:20px;
+    width: 18rem;
+    max-height:24rem;
+    height:23.5rem;
+    
+}
+
+.main-div{
+    display:flex;
+    width:700px;
+    margin:auto;
+}
+
+.title{
+    font-size:60px;
+    font-weight:100;
+    text-align:center;
+}
+
+.title{
+    display:flex;
+    justify-content: center;
+}
+
+.container{
+    margin:auto;
+    margin-top:7rem;
+    width:100vw;
+}
+
+/* Search Bar */
+
+.form-container{
+    width:700px;
+    margin:auto;
+    margin-top:20px;
+}
+.text{
+    height:48px;
+    font-size:medium;
+    outline:none;
+    width:570px;
+    padding-left:6px;
+    border:3px solid #0275d8;
+
+    
+  }
+
+  .card-body > p{
+     color:#292b2c;
+     font-size:17px;
+  }
+  
+  form{
+    display:flex;
+    
+  }
+  
+  #myBtn{
+    height:48px;
+    font-size:medium;
+    font-weight:400;
+    outline:none;
+    cursor:pointer;
+    width:69px;
+    padding-left:2px;
+    border-radius:0px;
+    background-color:#0275d8;
+    color:white;
+    border:1px solid #0275d8;
+    border-left:0px solid #0275d8;
+
+  
+  }
+
+
+  @media (max-width:600px){
+     .card{
+         margin-top:20px;
+     }
+
+     .card-container{
+       width:400px; 
+       margin:auto;
+     }
+
+     .text{
+         width:350px;
+     }
+     .title{
+         font-size:35px;
+         text-align:center;
+     }
+     .rotate{
+         width:40px;
+         height:40px;
+     }
+
+     .container{
+         display: block;
+         justify-content: center;
+     }
+     .form-container{
+         width:400px;
+         margin:auto;
+     }
+     .main-div{
+         width:400px;
+         margin:auto;
+     }
+  }

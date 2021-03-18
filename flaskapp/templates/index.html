@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <script defer src="main.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <title>COVID TRACKER</title>
+</head>
+<body>
+    <div class="container">
+    <div class="main-div">
+     <h2 class="title">W <div class="rotate"></div>RLD NEWS</h2>
+    </div>
+    <div class="form-container">
+        <form method="POST" class="form-container" id="form" action="/">
+            <input name="word" id="country" autofocus autocapitalize="on" autocomplete="off" class="text" placeholder="Search for news...eg- bitcoin stocks" id="text">
+            <button type="submit" class="btn" id="myBtn"><i id="icon" class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <br>
+    <h3 class="notifs" >{{key_word}} </h3 >
+    <br>
+    <div class="card-container">
+        {% for news, desc ,image, url in context %}
+
+        <div class="card" id="card">
+            <img class="card-img-top" src="{{image}}" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">{{news}}</p>
+             <a class="btn-primary form-container" id="view" href="{{url}}" target="_blank">View Story</a>
+            </div>
+          </div>
+      {% endfor %}
+    </div>
+</div>
+</div>
+    <div style="height:400px"></div>
+
+</body>
+</html>
