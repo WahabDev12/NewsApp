@@ -15,6 +15,7 @@ cd NewsApp/flaskapp
 ```
 ## Install and activate virtual environment
 ```
+pip install pipenv
 pipenv shell
 
 ```
