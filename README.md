@@ -43,7 +43,7 @@ python app.py
 
 
 
-## Adding a new word to dictionary
+## latest News Headlines
 ![GitHub Logo](/images/s3.png)
 
 
